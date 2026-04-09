@@ -26,7 +26,7 @@ public class Student {
 
     public String getAcademicAbility() {
         String result = null;
-        if(this.getMarks() >= 0 && this.getMarks() <=0) {
+        if(this.getMarks() >= 0 && this.getMarks() <=10) {
             if(this.getMarks() < 5)
                 result = "Weak";
             else if (this.getMarks() < 6.5)
@@ -34,7 +34,7 @@ public class Student {
             else if (this.getMarks() < 7.5)
                 result = "Good";
             else if (this.getMarks() < 9)
-                result = "Excellent";
+                result = "Very Good";
             else if (this.getMarks() <= 10)
                 result = "Excellent";
         }
@@ -42,4 +42,6 @@ public class Student {
             result = "Something wrong";
         return result;
     }
+
 }
+
